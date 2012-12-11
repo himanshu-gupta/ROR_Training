@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function revString() {
+	var str = document.form.string.value;
+	if (str == null || str =="") {
+		alert("Empty Field");
+		return false;
+	}
+	var rvStr, tR = [ ];
+	str = str.split("");
+	for ( var i = str.length - 1; i >= 0; i-- ) {
+		tR.push( str[ i ] );
+	}
+	alert("Reverse of the string you entered is : " + tR.join( "" ));
+	return true;
+}
+</script>
+</head>
+
+<body>
+<form name="form" onsubmit="return revString()">
+<input type="text" name="string">
+<input type="submit">
+</body>
+</html>

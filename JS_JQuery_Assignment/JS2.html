@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function maxLength() {
+	var x = document.form.description.value;
+	
+	if (x == null || x =="") {
+		alert("Empty Field");
+		return false;
+	}
+	
+	if( x.length > 200){
+		alert("Description exceeds limit of 200 characters");
+		return true;
+	}
+}
+</script>
+</head>
+
+<body>
+<form name="form" onsubmit="return maxLength()">
+Description<input type="text" name="description" autofocus="autofocus"><br>
+<input type="submit">
+</body>
+</html>

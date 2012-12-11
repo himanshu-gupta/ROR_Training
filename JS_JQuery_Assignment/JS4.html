@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function open_win()
+{
+window.open('https://www.google.co.in/search?q='+document.form.search.value,'search','width=450,height=300,status=yes,resizable=yes,scrollbars=yes');
+}
+</script>
+</head>
+
+<body>
+<form name="form" target="_blank" onSubmit="open_win()" autocomplete="on">
+Search...<input type="text" name="search">
+<input type="submit">
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function findMaxNumber() {
+	var x = document.form.number1.value;
+	var y = document.form.number2.value;
+	var z = document.form.number3.value;
+
+	if (x == null || x =="" || y == null || y =="" || z == null || z =="") {
+		alert("Empty Field");
+		return false;
+	}
+	
+	if( !isNaN(x) && !isNaN(y) && !isNaN(z)){
+		var num = Math.max(x,y,z);
+		alert(num + " is the largest of : " + x + ", " + y + " and " + z);
+		return true;
+	}else{
+		alert("Enter numeric value");
+	return false;
+	}
+}
+</script>
+</head>
+
+<body>
+<form name="form" onsubmit="return findMaxNumber()">
+Enter first number<input type="text" name="number1"><br>
+Enter second number<input type="text" name="number2"><br>
+Enter third number<input type="text" name="number3"><br>
+<input type="submit">
+</body>
+</html>

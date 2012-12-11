@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function isNumber() {
+	var x = document.form.number.value;
+	if (x == null || x =="") {
+		alert("Empty Field");
+		return false;
+	}
+	if( !isNaN(x)){
+		var num = Math.round(x);
+		var l=1;
+		for(i=1;i<=num;i++)
+			l=l*i;
+		alert("You entered " + x + " Calculating factorial of " + num + " and the result is " + l);
+		return true;
+	}else{
+		alert("Enter numeric value");
+	return false;
+	}
+}
+</script>
+</head>
+
+<body>
+<form name="form" onsubmit="return isNumber()">
+<input type="text" name="number">
+<input type="submit">
+</body>
+</html>

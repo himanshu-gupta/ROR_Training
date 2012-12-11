@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function listing() {
+	
+	var list = "";
+	for (var i=1; i<=100; i++) {
+		if( i % 2 == 0 && i % 3 == 0){
+			list += i + ", ";
+		}
+	}
+	alert("Numbers divisible by 2 and 3 are : " + list);
+}
+</script>
+</head>
+
+<body onload="listing()">
+</body>
+</html>
