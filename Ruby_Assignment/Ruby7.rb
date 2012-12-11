@@ -1,4 +1,9 @@
-require 'VehicleModule'
+module VehicleModule
+   def VehicleModule.speed
+	puts "Inside Module"
+   end
+end
+
 class Vehicle
   include VehicleModule
   attr_accessor :no_of_wheels
@@ -13,17 +18,25 @@ class Vehicle
     @brand = brand
   end
 
-  def say_hello
+  def Vehicle.callModule
     VehicleModule.speed
   end
+  puts "Inside Vehicle"
+  Vehicle.callModule
 end
 
 class Bike < Vehicle
+	puts "Inside Bike"
+	VehicleModule.speed
 end
 
 class Car < Vehicle
+	puts "Inside Car"
+	VehicleModule.speed
 end
 
 class Bus < Vehicle
+	puts "Inside Bus"
+	VehicleModule.speed
 end
 
