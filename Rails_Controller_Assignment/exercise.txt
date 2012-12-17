@@ -1,0 +1,26 @@
+Assignment II(Blog) -
+
+
+1. Cereate a application with User, Post, Comment
+
+-User
+Name
+login
+active(true/false) 
+-Role
+
+-Post
+title
+content
+owner 
+
+-Comment
+content
+owner
+post(for which post)
+
+2. Use Devise gem for authentication
+3. Admin Can Create/Edit users
+4. Only active user can create/edit project and post comment
+5. Create custom action to deactivate/activate the user. Only admin can do this
+6. Restrict the access with before filters
