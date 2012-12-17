@@ -1,0 +1,13 @@
+Assignment II(Blog) -
+1. Render a partial below the post show page to display all comments
+ 
+2.  The User form should contain First name, last name, Date of Birth(Use date helper), Gender, Address, type 
+(Admin or normal) and a checkbox for Hobbies containing options like(singing, dancing, reading etc.)
+(Use appropriate Actionview  helpers, add appropriate columns, use .css file to decorate the form.) 
+
+3. In the blog index page use the accordian view (http://jqueryui.com/accordion/) so that when a user clicks 
+on the title of the blog, it should open the content of it. 
+
+4. If the number of comments in the Post is greater than 10, then highlight the Post with a different class. 
+
+5. For an admin role, add buttons in the layout to redirect to Post and User index pages
